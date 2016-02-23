@@ -2,6 +2,6 @@
 A visualization that allows users to understand and analyze their spatio-temporal information, with focus on personal semantics.
 
 
-D3 Simple Example With Tooltip Online
+Dummy DB with Flask-resftul backend online.
 
-Current Problems: - Reusable charts/connecting visualizations with D3 + Backbone.js
+Connects with AngularJS front-end.
