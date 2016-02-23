@@ -1,0 +1,25 @@
+{
+  "name": "tracemysteps",
+  "authors": [
+    "PedroF20 <pedro.jc.francisco@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.py",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.6",
+    "jquery": "1.12.0",
+    "d3": "3.5.14"
+  }
+}
