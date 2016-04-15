@@ -83,12 +83,21 @@ class List_of_Init_Hours(Resource):
         MyList = list (i[0] for i in query.cursor.fetchall())
         return jsonify ({'initial_hours':MyList})
 
+class List_of_DatePrice_AreaGradient(Resource):
+    def get(self):
+        conn = e.connect()
+        query = conn.execute("select * from sp500")
+        #MyList = list (query.cursor.fetchall())
+        MyList = list (dict(zip (tuple (query.keys()) ,i)) for i in query.cursor)
+        return jsonify ({'date_price':MyList})
+
 
 api.add_resource(Init_Hour_Info, '/visits/<int:hour_of_visit>')
 api.add_resource(Name_of_Places, '/places')
 api.add_resource(Visits_on_Date, '/visits/onDate/<date_of_visit>')
 api.add_resource(Visits_Betweeen_Dates, '/visits/between/<left_limit_date>/<right_limit_date>')
 api.add_resource(List_of_Init_Hours, '/hours')
+api.add_resource(List_of_DatePrice_AreaGradient, '/areagradient')
 #api.add_resource(Home, '/')
 
 if __name__ == '__main__':
