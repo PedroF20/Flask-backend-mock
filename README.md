@@ -1,4 +1,4 @@
-# traceMySteps-backend
+# traceMySteps-backend-mock
 A visualization that allows users to understand and analyze their spatio-temporal information, with focus on personal semantics.
 
 
